@@ -1,8 +1,8 @@
 # pvc-img-gen-codex
 
-<p align="center"><img src="assets/pvc-img-gen-codex.jpg" width="360" alt="pvc-img-gen-codex"></p>
+<p align="center"><img src="assets/pvc-img-gen-codex-banner.jpg" alt="pvc-img-gen-codex"></p>
 
-![version](https://img.shields.io/badge/version-v0.2.0-blue) ![type](https://img.shields.io/badge/Claude%20Code-skill-7C5CFF) ![license](https://img.shields.io/badge/license-Apache%202.0-green)
+![version](https://img.shields.io/badge/version-v0.2.1-blue) ![type](https://img.shields.io/badge/Claude%20Code-skill-7C5CFF) ![license](https://img.shields.io/badge/license-Apache%202.0-green)
 
 > Real images from Claude Code, made with your ChatGPT account through the Codex CLI. One PNG per call, verified on disk. Windows, macOS and Linux.
 
@@ -152,6 +152,7 @@ python .claude/skills/pvc-img-gen-codex/scripts/test_skill.py
 
 ## Changelog
 
+- v0.2.1 (2026-09-22): README shows the cream banner `assets/pvc-img-gen-codex-banner.jpg` full width under the title, the card art on a sheet in its own paper color with the PVC five-bar mark bottom right; the social preview matches it with the mark bottom left. Docs only, no change to what the skill does
 - v0.2.0 (2026-09-22): runs on macOS and Linux as well as Windows. The finder picks the `bin` folder for the system and CPU it runs on (one extension bundle holds several), looks in the Homebrew and npm folders a desktop app may not have on PATH, and searches the `.vscode-server`, VSCodium and Windsurf extension folders too. New `--sandbox` option for Linux boxes where Codex cannot start its sandbox, a `chmod +x` hint when the binary is not executable, the npm `codex.cmd` shim on Windows accepted but ranked below the extension's `codex.exe`, a `test_skill.py` with offline checks that spend no quota, and docs written for every system
 - v0.1.2 (2026-09-18): Codex CLI 0.154 removed `--full-auto`, so every run failed before it started. gen_image.py now sends `--sandbox workspace-write --skip-git-repo-check`, which old and new Codex versions accept, and runs outside a git repo too. Verified with 35 live renders and 6 live edits
 - v0.1.1 (2026-09-04): description and trigger list now send PVC skill card art to pvc-skill-art, which drives this skill's gen_image.py for its renders

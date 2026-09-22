@@ -3,7 +3,7 @@ name: pvc-img-gen-codex
 description: Generates and edits real images from a text brief through the OpenAI Codex CLI that comes with the ChatGPT VS Code extension, on the user's ChatGPT account instead of Claude tokens. Use when asked to "generate an image", "make me a picture of X", "create the hero shot", "render the product photo", "make a transparent PNG of the logo", "change only the background of this image", "we need visuals for this page", or any time a page, post, deck, thumbnail or card needs an image that does not exist yet. Also use to edit an existing image while keeping named parts unchanged. Works on Windows, macOS and Linux; not in the web version of Claude Code. Requires the ChatGPT VS Code extension (openai.chatgpt) signed in, or the Codex CLI; Pillow optional. Not for local GPU generation (ComfyUI), not for judging an image already made (pvc-image-check), not for reading video (pvc-claude-vision), not for PVC skill card art (pvc-skill-art).
 metadata:
   author: pvc
-  version: "0.2.0"
+  version: "0.2.1"
 license: Apache-2.0
 ---
 
